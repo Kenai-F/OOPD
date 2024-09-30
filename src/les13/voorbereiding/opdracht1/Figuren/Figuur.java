@@ -1,0 +1,16 @@
+package les13.voorbereiding.opdracht1.Figuren;
+
+import les13.voorbereiding.opdracht1.TekenApp;
+
+public abstract class Figuur {
+    protected float x, y;
+
+    public Figuur(float x, float y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public abstract void teken(TekenApp app);
+
+    public abstract boolean isMuisBinnen(float x, float y, TekenApp app);
+}
